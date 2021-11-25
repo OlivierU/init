@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{indentfirst}
 \usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{titling}
 
 \usepackage[
 backend=biber,
@@ -32,14 +34,22 @@ style=apa,
 
 \author{Andrea Häfliger, Olivier Ulrich, Konstantinos Zervas}
 
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{INIT}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\theauthor}
+
 \begin{document}
 
-\pagenumbering{gobble}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
 \maketitle
 \newpage
 \tableofcontents
 \newpage
-\pagenumbering{arabic}
 
 \section{Research Plan: Summary}
 
